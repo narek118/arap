@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WOLF</title>
+	<!-- Bootstrap -->
+    
+   <link rel="stylesheet" href="/css/style.css">
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#"><span style="font-size: 40px;">wolf</span><span>.am</span></a>
+        <a onclick="fxx()" class="btn btn-default btn-sm navbar-btn col-xs-4 hidden-sm hidden-md hidden-lg" style="border-radius: 0px !important; text-align: center;">Ֆիլտրել<span style="float: right; margin-top: 8px;" class="caret"></span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="demo" class="hidden-xs show" style="text-align: center;">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="col-sm-4 col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown">Մարզ
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown">Քաղաք
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown">Գյուղ
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="float: right;">
+      <div class="col-sm-4 col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown">Դասակարգ
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown">Տեսակ
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown">Տարատեսակ
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div id="arbtn" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="btn-group btn-group-justified">
+        <a onclick="araj()" class="btn btn-success"><span id="spn1" class="glyphicon glyphicon-menu-left" style="float: left; display: none; margin-top: 2px;"></span>Առաջարկ</a>
+      </div>
+    </div>
+    <div id="pabtn" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: block;">
+      <div class="btn-group btn-group-justified">
+        <a id="pabtntext" class="btn btn-danger"><span id="spn2" class="glyphicon glyphicon-menu-left" style="display: none;"></span>Պահանջարկ</a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="margin-top: 4px;">
+    <div id="aj11" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-right: 1px; padding-left: 1px;">
+      <div style="border-top: solid; border-right: solid; border-color: #5CB85C; height: 800px;">
+        <div class="listar col-sm-12">
+          <div class="lnkar">
+            
+          </div>
+            <div class="table-responsive">          
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Անվանում</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Գառ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive">          
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Չ/մ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>կգ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive">          
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Գին</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1000 դրամ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="listar col-sm-12">
+          
+        </div>
+        <div class="listar col-sm-6">
+          
+        </div>
+        <div class="listar col-sm-6">
+          
+        </div>
+      </div>
+    </div>
+    <div id="pc1" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-left: 1px; padding-right: 1px;">
+      <div style="border-top: solid; border-left: solid; border-color: #D9534F; height: 800px;">
+        
+      </div>
+    </div>
+  </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src='/js/pit.js'></script>
+	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+</body>
+</html>

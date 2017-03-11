@@ -1,0 +1,31 @@
+.navbar, #demo button {
+	border-radius: 0px !important;
+}
+#demo button {
+	margin-bottom: 18px;
+}
+.affix {
+    top: 0;
+  }
+#demo button {
+	width: 99px;
+}
+#demo span {
+  	float: right;
+  	margin-top: 8px;
+}
+.listar {
+	
+}
+.lnkar {
+	border: solid 1px;
+	width: 77px;
+	height: 77px;
+	float: left;
+	margin-top: 2px;
+}
+.table-responsive {
+	float: left;
+	margin-left: 3px;
+	margin-top: 2px;
+}
